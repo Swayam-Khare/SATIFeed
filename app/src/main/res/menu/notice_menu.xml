@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <item
+        android:id="@+id/logoutOpt"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:icon="@drawable/web_ico" />
+
+    <item
+        android:id="@+id/refreshOpt"
+        android:title="Refresh"
+        android:icon="@drawable/refresh_icon"
+        app:showAsAction="always"
+        android:iconTint="@color/primaryDark"
+        />
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inboxOpt"
+        android:title="Inbox"
+        android:icon="@drawable/inbox_icon" />
+
+    <item
+        android:id="@+id/timeOpt"
+        android:title="Time Table"
+        android:icon="@drawable/tt2_icon" />
+
+    <item
+        android:id="@+id/syllabOpt"
+        android:title="Syllabus"
+        android:icon="@drawable/syllabus_icon" />
+
+</menu>

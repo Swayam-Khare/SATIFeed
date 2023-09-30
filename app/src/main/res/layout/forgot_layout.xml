@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryDark">
+
+    <TextView
+        android:id="@+id/forgotTitle"
+        style="@style/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/forgotEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edittext_bg"
+        android:elevation="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lexend"
+        android:gravity="center_vertical"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="12dp"
+        android:textColor="#1E1D1D"
+        android:textColorHint="@color/primaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "553411035063",
+    "project_id": "notice-app-sk",
+    "storage_bucket": "notice-app-sk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553411035063:android:e479c3382e73c82de87232",
+        "android_client_info": {
+          "package_name": "com.satifeed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553411035063-882qfp3k2lgosodgp6g92hv91paq39if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ErSw6kEnyk1rQE8g7dHUGis5WVmabAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553411035063-882qfp3k2lgosodgp6g92hv91paq39if.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

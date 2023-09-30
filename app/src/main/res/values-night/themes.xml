@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--     Base application theme. -->
+    <style name="Theme.SATIFeed" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/amber</item>
+        <item name="colorPrimaryVariant">@color/amber</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="Theme.SATIFeed">
+        <item name="android:textColorSecondary">@color/primaryDark</item>
+    </style>
+
+    <style name="appText" parent="android:TextAppearance">
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/lexend</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+
+        <item name="itemRippleColor">@color/amber</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/primaryDark</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:background">@color/primaryDark</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="@style/Widget.MaterialComponents.Button">
+        <!-- text color for the button -->
+        <item name="android:textColor">@color/primaryDark</item>
+        <!-- Background tint for the button -->
+        <item name="backgroundTint">@color/primaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textWelcome"
+        style="@style/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="Welcome to\n SATI"
+        android:textAlignment="viewStart"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:fontFamily="@font/lexend"
+        android:text="Feed"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textDesc"
+        app:layout_constraintEnd_toEndOf="@+id/textWelcome" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        style="@style/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:text="One app for all the College feeds"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
+
+    <Button
+        android:id="@+id/imStudentBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        android:fontFamily="@font/lexend"
+        android:text="Student"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textDesc"
+        app:layout_constraintStart_toStartOf="@+id/textDesc"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:alpha="0.7"
+        android:text="Login as"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textDesc"
+        app:layout_constraintTop_toBottomOf="@+id/textDesc" />
+
+    <Button
+        android:id="@+id/imTeacherBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_bg"
+        android:elevation="8dp"
+        android:fontFamily="@font/lexend"
+        android:text="Faculty"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textDesc"
+        app:layout_constraintStart_toStartOf="@+id/textDesc"
+        app:layout_constraintTop_toBottomOf="@+id/imStudentBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

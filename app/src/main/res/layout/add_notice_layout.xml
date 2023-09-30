@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryDark"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/addNoticeTitle"
+        style="@style/appText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Notice"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/edittext_bg"
+        android:elevation="8dp"
+        android:maxLength="20"
+        android:fontFamily="@font/lexend"
+        android:gravity="center_vertical"
+        android:hint="Enter Notice Title"
+        android:inputType="textCapWords"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="12dp"
+        android:textColor="#1E1D1D"
+        android:textColorHint="@color/primaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addNoticeTitle"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/filePath"
+        style="@style/appText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="11dp"
+        android:text="File path:"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/fileName"
+        app:layout_constraintStart_toStartOf="@+id/fileName"
+        app:layout_constraintTop_toBottomOf="@+id/fileName" />
+
+    <Button
+        android:id="@+id/selectFileBtn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/lexend"
+        android:text="Select File"
+        android:textAllCaps="false"
+        android:textColor="#1E1D1D"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/filePath"
+        app:layout_constraintTop_toBottomOf="@id/filePath" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toStartOf="@+id/filePath"
+        app:layout_constraintTop_toTopOf="@+id/selectFileBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_top">
+
+        <item
+            android:id="@+id/calendarOpt"
+            android:icon="@drawable/syllabus_icon"
+            android:title="Academic Calendar" />
+
+    </group>
+
+    <group android:id="@+id/menu_bottom">
+
+        <item
+            android:icon="@drawable/insta_icon"
+            android:id="@+id/instagramOpt"
+            android:title="Instagram" />
+
+        <item
+            android:icon="@drawable/fb_icon"
+            android:id="@+id/facebookOpt"
+            android:title="Facebook" />
+
+        <item
+            android:icon="@drawable/web_ico"
+            android:id="@+id/websiteOpt"
+            android:title="Website" />
+
+        <item
+            android:icon="@drawable/youtube_icon"
+            android:id="@+id/youtubeOpt"
+            android:title="YouTube" />
+
+        <item
+            android:icon="@drawable/linkedin_icon"
+            android:id="@+id/linkedinOpt"
+            android:title="LinkedIn" />
+
+    </group>
+</menu>
